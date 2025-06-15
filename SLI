@@ -1,0 +1,17 @@
+Information Regarding the Formula in SLI.ipynb
+Scaled Linearity Index
+
+== Linearity Index
+The Linearity Index can be defined as "the ratio of displacement between the final and initial points of recording and the summation of all displacements measured over the entire interval of recording".
+
+In our case, we made 31 measurements, the first at t=0 and the final at t=30. We defined the "Net Horizontal Vector (NHV)" as the displacement between the points at t=0 and t=30, P_i and P_f, and the "Net
+Horizontal Displacement (NHD)" as the summation of displacements between every point recorded. 
+
+The Linearity Index was then calculated as NHV/NHD, where a value of 0 indicated that between t=0 and t=30, the animal had returned back to P_i, while a value 1 indicated that between t=0 and t=30, the animal
+had moved in an entirely linear fashion. Inevitably, this led to skewed results when the NHD was extraordinarily low, especially if the animal had only moved between two points from t=0 to t=30. Thus, the
+creation of the Scaled Linearity Index was necessitated.
+
+== Scaled Linearity Index
+The Scaled Linearity Index (SLI) is an arbitrary value that is a combination of an animal's linearity index and a modifier that accounts for increasing displacement according to an assigned "significant 
+displacement value" (D_S). For example, a minimum of 50 centimeters travelled by an animal could be determined to be the "significant displacement value" and an arbitrary minimum SLI can be selected to
+determine whether the animal's movements could be considered "significantly linear" relative to its NHD.
